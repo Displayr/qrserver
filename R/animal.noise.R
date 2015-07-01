@@ -10,12 +10,10 @@
 #' @export
 animal.noise = function(animal)
 {
-    if (animal == "dog")
-        "Woof"
-    else if (animal == "cat")
-        "Meow"
-    else if (animal == "cow")
-        "Moo"
-    else
-        "Who cares"
+    switch(animal,
+       "dog"="Woof",
+       "cat"="Meow",
+       "cow"="Moo",
+       "Who cares"
+    )
 }
