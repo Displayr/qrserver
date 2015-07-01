@@ -9,4 +9,5 @@ This R package contains some Q R server functions.
 This function works out the appropriate noise:
 
   animal.noise("elephant") # Who cares
+
   animal.noise("dog") # Woof
