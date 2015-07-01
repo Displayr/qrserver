@@ -1,0 +1,56 @@
+---
+title: "flip: Generic methods for multivariate analysis"
+author: "Tim Bock"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{flip: Generic methods for multivariate analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\usepackage[utf8]{inputenc}
+---
+
+This package introduces new generic methods.  The purpose of the generic methods is to provide consistent ways for extracting and plotting information from diverse packages.  Start, by loading the package:
+
+```{r}
+library(flipGenerics)
+```
+
+
+
+
+# GoodnessOfFit
+
+The 'GoodnessOfFit' method extracts, and if necessary computes, a measure of goodness-of-fit from a model.  In general, the measure is chosen to as-close-as-possible approximate the proportion of variance explained by the model.  Please note that it neither suggested nor implied that the resulting output is the or even an appropriate way of validating a model.
+ 
+For example, the following extracts the the proportion of variance ($R^2$) explained by  a linear regression:
+
+```{r}
+x <- rnorm(10)
+y <- rnorm(10) + x
+mod <- glm(y ~ x)
+GoodnessOfFit(mod)
+```
+
+and this does the same for a multidimensional scaling plot: 
+
+```{r}
+library(smacof)
+data(breakfastDissimilarities)
+mdsInterval <- smacofSym(breakfastDissimilarities[[4]], type = "interval", eps = 1e-12, itmax = 100000)
+GoodnessOfFit(mdsInterval)
+```
+
+# GoodnessOfFitPlot
+
+The 'GoodnessOfFitPlot' method find, or if necessary creates, a graphical display of the goodness-of-fit of a plot.  For example, with a *multidimensional scaling (MDS)* from the 'smcaof' package, a *Shepard Diagram* is created, showing the relationship between the observed and fitted distance data:
+
+
+
+
+```{r}
+library(smacof)
+library(flipGenerics)
+data(breakfastDissimilarities)
+mdsInterval <- smacofSym(breakfastDissimilarities[[4]], type = "interval", eps = 1e-12, itmax = 100000)
+GoodnessOfFitPlot(mdsInterval)
+```
