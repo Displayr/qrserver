@@ -1,11 +1,11 @@
-Package: dpu.mobility
+Package: qrserver
 Type: Package
-Title: Mobility DPU functions
-Version: 0.2
-Date: 2012-03-10
-Author: Jeroen Ooms
-Maintainer: Jeroen Ooms <jeroen.ooms@stat.ucla.edu>
-Description: Mobility DPU functions
+Title: Q R Server
+Version: 0.3
+Date: 2015-07-01
+Author: Matt Numbers
+Maintainer: Matt Numbers <matt.partridge@numbers.net.au>
+Description: Q R Server
 License: Apache2
 Imports:
     geosphere

@@ -1,4 +1,4 @@
-# Mobility DPU functions
+# QRServer
 
 This R package contains some DPU functions related to mobile health and mobility. The DPUs are written in R and deployed through the OpenCPU framework. For more information about the API, visit www.opencpu.org. 
 
