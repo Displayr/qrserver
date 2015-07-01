@@ -1,7 +1,7 @@
 Package: qrserver
 Type: Package
 Title: Q R Server
-Version: 0.3
+Version: 0.4
 Date: 2015-07-01
 Author: Matt Numbers
 Maintainer: Matt Numbers <mattnumbers@qrserver2.qrserver.b2.internal.cloudapp.net>
