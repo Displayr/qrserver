@@ -11,7 +11,7 @@
 animal.noise = function(animal)
 {
     switch(animal,
-       "dog"="Woof",
+       "dog"="Woofie",
        "cat"="Meow",
        "cow"="Moo",
        "Silence"
