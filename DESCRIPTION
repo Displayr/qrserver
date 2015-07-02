@@ -1,11 +1,20 @@
-Package: qrserver
+Package: flipGenerics
 Type: Package
-Title: Q R Server
-Version: 0.4
-Date: 2015-07-01
-Author: Matt Numbers
-Maintainer: Matt Numbers <mattnumbers@qrserver2.qrserver.b2.internal.cloudapp.net>
-Description: Q R Server
-License: Apache2
-Imports:
-    geosphere
+Title: R Analysis Functions for Q
+Version: 0.1
+Authors@R: "Tim Bock <tim.bock@numbers.net.au> [aut, cre, cph]"
+Description: Generic functions for multivariate statistics.  Contains wrappers
+    for may standard multivariate techniques, so that users can apply these
+    without having to learn the intracacies of each package author's function
+    naming conventions.
+Depends:
+    R (>= 3.1.1),
+Suggests:
+    ggplot2,
+    ca,
+    MASS,
+    smacof,
+    knitr
+License: GPL-2
+LazyData: true
+VignetteBuilder: knitr

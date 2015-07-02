@@ -1,10 +1,10 @@
 ---
-title: "flip: Generic methods for multivariate analysis"
+title: "R Analysis Functions for Q "
 author: "Tim Bock"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{flip: Generic methods for multivariate analysis}
+  %\VignetteIndexEntry{qrserver: R Analysis Functions for Q}
   %\VignetteEngine{knitr::rmarkdown}
   %\usepackage[utf8]{inputenc}
 ---
