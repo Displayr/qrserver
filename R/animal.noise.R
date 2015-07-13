@@ -16,6 +16,7 @@ animal.noise = function(animal)
        "cow"="Moo",
        "duck"="Quack",
        "elephant"="Silence",
+       "donkey"="Eeeor",
        "Who cares"
     )
 }
